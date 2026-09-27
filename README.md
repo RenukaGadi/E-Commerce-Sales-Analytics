@@ -2,15 +2,15 @@
 
 ## Project Overview
 
-This project analyzes e-commerce sales transaction data to identify sales trends, customer behavior, product performance, payment preferences, and return patterns.
+This project analyzes e-commerce transaction data to understand sales performance, customer behavior, product performance, payment preferences, regional sales, and return patterns.
 
-The project was developed as an end-to-end Data Analytics project using:
+The project follows an end-to-end Data Analytics workflow:
 
-**Excel → Python (Pandas) → SQL → Power BI**
+**Excel → Python (Pandas/Jupyter) → SQL → Power BI**
 
 ## Dataset
 
-The dataset contains **34,500 e-commerce transactions** with 17 columns.
+The dataset contains **34,500 e-commerce transactions** with **17 columns**.
 
 ### Main Columns
 
@@ -35,8 +35,8 @@ The dataset contains **34,500 e-commerce transactions** with 17 columns.
 ## Tools Used
 
 - **Microsoft Excel** – Data analysis and dashboard
-- **Python / Pandas** – Data cleaning and analysis
-- **MonetDB SQL** – SQL-based analysis
+- **Python / Pandas / Jupyter Notebook** – Data cleaning and exploratory analysis
+- **MonetDB SQL** – SQL-based business analysis
 - **Power BI** – Interactive dashboard
 - **GitHub** – Project documentation and version control
 
@@ -56,9 +56,9 @@ Created an initial sales dashboard containing:
 - Monthly Sales Trend
 - Return Analysis
 
-### 2. Python
+### 2. Python / Jupyter Notebook
 
-Used Pandas for data cleaning and exploratory analysis.
+Used Python and Pandas for data cleaning and exploratory data analysis.
 
 Tasks performed:
 
@@ -68,16 +68,21 @@ Tasks performed:
 - Checked missing values
 - Checked duplicate records
 - Calculated total sales
+- Calculated total orders
 - Calculated average order value
-- Analyzed category and regional sales
+- Analyzed sales by category
+- Analyzed sales by region
 - Analyzed payment methods
 - Calculated return rate
 - Analyzed monthly sales
-- Identified top customers and products
+- Identified top customers
+- Identified top products
+
+The Jupyter Notebook contains the Python analysis along with the generated outputs and results.
 
 ### 3. SQL
 
-Used MonetDB to perform SQL analysis.
+Used MonetDB SQL to perform business analysis.
 
 Queries included:
 
@@ -97,7 +102,7 @@ Queries included:
 
 Created an interactive **E-Commerce Sales Analytics Dashboard**.
 
-Dashboard includes:
+The dashboard includes:
 
 - Total Sales – **5.87M**
 - Total Orders – **34.5K**
@@ -115,9 +120,9 @@ Dashboard includes:
 
 - **Electronics** generated the highest sales among categories.
 - **Grocery** generated the lowest sales among categories.
-- **South** was the highest-performing region.
+- **South** had the highest sales among regions.
 - **Central** had the lowest sales among regions.
-- **Credit Card** was the highest-sales payment method.
+- **Credit Card** generated the highest sales among payment methods.
 - There were **1,903 returned orders**.
 - The overall return rate was approximately **5.52%**.
 - Total sales were approximately **5.87 million**.
@@ -134,7 +139,8 @@ E-Commerce-Sales-Analytics
 │   └── E-Commerce-Sales-Dashboard.xlsx
 │
 ├── Python
-│   └── ecommerce_sales_analysis.py
+│   ├── ecommerce_sales_analysis.py
+│   └── ecommerce_sales_analysis.ipynb
 │
 ├── SQL
 │   └── ecommerce_sales_analysis.sql
@@ -142,4 +148,5 @@ E-Commerce-Sales-Analytics
 ├── PowerBI
 │   └── E-Commerce-Sales-Dashboard.pbix
 │
+├── dashboard.png
 └── README.md
